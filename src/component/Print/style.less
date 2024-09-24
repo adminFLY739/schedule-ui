@@ -1,0 +1,257 @@
+.g-print{
+  margin-top: 30px;
+
+  .g-sysa1 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: rgba(0,0,0,.7);
+    overflow: scroll;
+
+    .m-bd{
+      background-color: #fff;
+      margin: 0 auto;
+      width: 1250px;
+      .m-hd {
+        padding: 10px 15px;
+        position: relative;
+    
+        .m-term {
+          font-weight: bold;
+          padding: 0 10px;
+          position: relative;
+          top: 30px;
+          left: 30px;
+        }
+    
+        .m-title {
+            margin: -5px 0;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 15px;
+    
+            &>span:nth-child(1) {
+              font-size: 24px;
+              font-weight: bold;
+            }
+        }
+      
+    
+        .m-info{
+            display: flex;
+            justify-content: center;
+    
+            margin: 10px;
+    
+            &>span{
+                //border: 1px solid;
+                padding: 5px 10px;
+                & + span{
+                  //  border-left: 1px solid transparent;
+                }
+            }
+        }
+      }
+        
+        .m-main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 10px;
+            padding: 10px 45px;
+            background: #fff;
+            position: relative;
+    
+           &>.m-tl{
+               align-self: center;
+               font-size: 20px;
+               margin-bottom: 10px;
+           }
+    
+            &>.m-sect{
+                display: flex;
+                border-left: 1px solid #000;
+                border-bottom: 1px solid #000;
+              
+                &:nth-child(2){
+                    border-top: 1px solid #000;
+                }
+    
+                .m-item {
+                  flex: 1;
+                  display: flex;
+                  padding: 0;
+                  border-right: 1px solid #000;
+                  
+                  &>:nth-child(1) {
+                    width: 80px;
+                    text-align: center;
+                    padding: 5px 2px;
+                    border-right: 1px solid #000;
+                  }  
+                  
+                  &>:nth-child(2){
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;    
+                      margin-left: 10px;            
+                  }
+                }
+            }
+        }
+    
+        .m-tab-teach {
+            display: flex;
+            flex-direction: column;
+            border-left: 1px solid;
+    
+            &>:nth-last-child(1){
+                border-bottom: 1px solid;
+            }
+    
+            .m-row {
+              display: flex;
+              position:relative;
+              text-align: center;
+              
+              &>span {
+                padding: 5px 10px;
+                border: 1px solid;
+                border-left: 1px solid transparent;
+                border-bottom: 1px solid transparent;
+                text-align: left;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+    
+              &>span:nth-child(1) {
+                flex:1;
+              }
+    
+              &>span:nth-child(2) {
+                width: 100px;
+              }
+     
+              &>span:nth-child(3) {
+                flex:1;
+                text-align: center;
+              }
+    
+              &>span:nth-child(4) {
+                flex: 1;
+              }
+    
+              &>span:nth-child(5) {
+                width: 150px;
+                flex: 1;
+              }
+            }
+    
+            label{          
+                &:nth-child(2n){
+                    align-self: flex-start;    
+                    border: 1px solid;
+                }        
+            }
+        }
+    
+        .m-tab {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    
+            &>label{
+                font-size: 18px;
+                align-self: center;
+            }
+    
+            &>div{
+                min-height: 150px;
+                border: 1px solid;
+                margin-bottom: 25px;
+                margin-top: 5px;
+                padding: 5px;
+            }
+        }
+          
+        .m-row-t {
+            display: flex;
+            border-left: 1px solid;
+    
+            &>span {
+              padding: 10px;
+              position:relative;
+              flex: 1;
+              border: 1px solid;
+              border-bottom: 1px solid transparent;
+              border-left: 1px solid transparent;
+              text-align: center;
+            }
+    
+            &:nth-last-child(1){
+                border-bottom: 1px solid;
+            }
+        }
+    
+        .m-row-e {
+            display: flex;
+            border-left: 1px solid;
+    
+            &+.m-row {
+              margin-top: 1px;
+            }
+    
+    
+            &>span {
+              padding: 10px;
+              position:relative;
+              text-align: center;
+              flex: 1;
+              border: 1px solid;
+              border-bottom: 1px solid transparent;
+              border-left: 1px solid transparent;
+            }
+    
+            &:nth-last-child(1){
+                border-bottom: 1px solid;
+            }
+          }
+    
+        .m-time-sign{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 15px;
+            position: relative;
+            right: 30px;
+            font-size: 14px;
+    
+            span{
+                padding: 0px 10px;
+                letter-spacing: 1px;
+    
+                & + span{
+                    border-bottom: 1px solid;
+                }
+            }
+    
+            img{
+              max-width: 100px;
+            }
+    
+            & + .m-time-sign{
+                margin-top: 15px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+  
+  }
+  
+}
